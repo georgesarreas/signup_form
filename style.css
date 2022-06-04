@@ -1,8 +1,9 @@
-body {
+html, body {
     background-image: url("./images/2795.jpg");
     background-size: 200vh;
     background-repeat: no-repeat;
     margin: 0;
+    height: 100%;
 }
 
 @font-face {
@@ -13,6 +14,7 @@ body {
 
 .container {
     display: flex;
+    height:100%;
 }
 
 .column-left {
@@ -28,18 +30,28 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    height: 100%;
 }
 
 .top-card {
     background-color: rgb(247, 243, 243);
     font-weight: 900;
     padding: 100px;
+    height: 100%;
 }
 
 .form-card {
     background-color: white;
     align-self: stretch; /* since i have flex end i want this to fill the gap to container in left edge */
     padding: 100px;
+    height: 100%;
+}
+
+.bottom-card {
+    background-color:rgb(247, 243, 243) ;
+    padding: 50px 100px 100px 100px;
+    align-self: stretch;
+    height: 100%;
 }
 
 input,label {
@@ -72,4 +84,21 @@ input:focus {
 .error {
     border-color: red;
     border-width: 1px;
+}
+
+
+
+button {
+    background-color: rgb(rgb(51, 187, 221), green, blue);
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 900;
+
+}
+
+a {
+    color: rgb(rgb(51, 187, 221), green, blue);
+    text-decoration: none;
 }
