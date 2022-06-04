@@ -43,11 +43,13 @@
                     <br>
                     <div class="password">
                         <label for="password">Password:</label>
-                        <input type="password" id="password" name="password">
+                        <input class="error" type="password" id="password" name="password">
+                        <!-- error class i added manually.Should prolly use JS form validation but should do for now -->
+                        <p class="error-msg">*Passwords do not match</p>
                     </div>
                     <div class="password-confirm">
                         <label for="password-confirm">Confirm Password:</label>
-                        <input type="password" id="password-confirm" name="password-confirm">
+                        <input class="error" type="password" id="password-confirm" name="password-confirm">
                     </div>
 
 

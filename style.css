@@ -1,5 +1,7 @@
 body {
     background-image: url("./images/2795.jpg");
+    background-size: 200vh;
+    background-repeat: no-repeat;
     margin: 0;
 }
 
@@ -41,7 +43,14 @@ body {
 }
 
 input,label {
+    border-radius: 5px;
     display: block; /* this was what i did to stop labels from going all over the place when shrinking the window*/
+}
+
+input:focus {
+    border-color: blue;
+    border-width: 1px;
+    box-shadow: 5px 5px rgb(196, 195, 195);
 }
 
 .first_Name, .email, .password {
@@ -53,4 +62,14 @@ input,label {
     float: left;
 }
 
+/* error class i added manually.Should prolly use JS form validation but should do for now. keep in mind to change this if i do */
+.error-msg {
+    color: red;
+    font-size: 12px;
+    margin: 0px;
+}
 
+.error {
+    border-color: red;
+    border-width: 1px;
+}
