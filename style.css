@@ -1,0 +1,56 @@
+body {
+    background-image: url("./images/2795.jpg");
+    margin: 0;
+}
+
+@font-face {
+    font-family: "MyFont";
+    src: url(./fonts/Norse-Bold.otf) format("woff2"); /*included formats for compatibility */
+    src: url(./fonts/Norse-Bold.otf) format("woff");
+}
+
+.container {
+    display: flex;
+}
+
+.column-left {
+    flex-basis: 50%; /* initial width to be half*/
+    font-family: "MyFont" , sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    align-self: center; /* center sweet to the middle of left column */
+    background-color: rgba(0,0,0,0.5); /* for readability */
+}
+
+.column-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.top-card {
+    background-color: rgb(247, 243, 243);
+    font-weight: 900;
+    padding: 100px;
+}
+
+.form-card {
+    background-color: white;
+    align-self: stretch; /* since i have flex end i want this to fill the gap to container in left edge */
+    padding: 100px;
+}
+
+input,label {
+    display: block; /* this was what i did to stop labels from going all over the place when shrinking the window*/
+}
+
+.first_Name, .email, .password {
+    float: left;
+    margin-right: 80px;
+}
+
+.last_Name, .phone , .password-confirm {
+    float: left;
+}
+
+
