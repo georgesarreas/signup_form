@@ -18,7 +18,7 @@ html, body {
 }
 
 .column-left {
-    flex-basis: 50%; /* initial width to be half*/
+    flex-basis: 70%; /* initial width to be half*/
     font-family: "MyFont" , sans-serif;
     color: whitesmoke;
     text-align: center;
